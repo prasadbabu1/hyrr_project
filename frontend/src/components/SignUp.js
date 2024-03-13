@@ -34,7 +34,7 @@ const SignUp = () => {
 
   const onSubmit = (values, { setSubmitting }) => {
 
-   let res= axios.post("http://localhost:8080/Signup",{
+   let res= axios.post("https://hyrr-project.onrender.com/Signup",{
         firstName:values.firstName,
         lastName:values.lastName,
         email:values.email,

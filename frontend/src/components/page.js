@@ -8,7 +8,7 @@ const PaginationComponent = () => {
 
   const fetchProducts = async (page) => {
     try {
-      const response = await axios.get(`http://localhost:8080/api/products?page=${page}&pageSize=10`);
+      const response = await axios.get(`https://hyrr-project.onrender.com/api/products?page=${page}&pageSize=10`);
       console.log(response.data)
       const { products, totalPages } = response.data;
       setProducts(products);
